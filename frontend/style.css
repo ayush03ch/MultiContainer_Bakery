@@ -25,12 +25,27 @@ main {
   gap: 20px;
 }
 
-#products-section, #cart-section {
+#products-section {
   background-color: #fff3e0;
   padding: 20px;
   border-radius: 10px;
-  width: 45%;
-  min-width: 300px;
+  width: 70%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  gap: 40px;
+}
+
+#cart-section,
+#status-section {
+  background-color: #fff3e0;
+  padding: 15px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 

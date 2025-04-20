@@ -8,7 +8,7 @@ function fetchProducts() {
       data.forEach(item => {
         const div = document.createElement('div');
         div.className = 'product';
-        div.innerHTML = `<strong>${item.name}</strong><br>₹${item.price}<br>
+        div.innerHTML = `<strong>${item.name}</strong> -  ₹${item.price}<br>
           <button onclick='addToCart(${JSON.stringify(item)})'>Add to Cart</button>
           <button onclick='orderNow(${JSON.stringify(item)})'>Order Now</button>`;
         container.appendChild(div);
